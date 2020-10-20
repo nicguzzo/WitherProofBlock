@@ -1,16 +1,16 @@
 {
     "type": "minecraft:crafting_shaped",
     "pattern": [
-        "I#I",
         "###",
-        "I#I"
+        "#n#",
+        "###"
     ],
     "key": {
         "#": {
             "item": "minecraft:obsidian"
         },
-        "I": {
-            "item": "minecraft:iron_ingot"
+        "n": {
+            "item": "minecraft:netherite_ingot"
         }        
     },
     "result": {

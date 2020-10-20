@@ -1,0 +1,12 @@
+{
+  "minVersion": "0.8",
+  "compatibilityLevel": "JAVA_8",
+  "required": true,
+  "package": "net.nicguzzo.wpbmod.mixin",
+  "refmap": "wpbmod.refmap.json",
+  "mixins": ["WitherEntityMixin"],
+  "client": [] ,
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

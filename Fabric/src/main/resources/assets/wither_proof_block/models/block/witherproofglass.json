@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+      "all": "wither_proof_block:block/witherproofglass"
+    }
+ }

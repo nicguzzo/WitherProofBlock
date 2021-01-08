@@ -28,26 +28,20 @@ public class RegistryHandler {
    // register block
    public static final RegistryObject<Block> WPB = BLOCKS.register("witherproofblock", () ->
         new WitherProofBlock()
-           /*new Block(
-                   Block.Properties
-                           .create(Material.ROCK)
-                           .hardnessAndResistance(5.0f, 6.0f)
-                           .sound(SoundType.STONE)
-                           .harvestLevel(1)
-                           .harvestTool(ToolType.PICKAXE)
-           )*/
    );
-   
-   /* // register item
-    public static final RegistryObject<Item> COPPER = ITEMS.register("copper", () ->
-            new Item(
-                    new Item.Properties().group(ItemGroup.MATERIALS)
-            )
-    );*/
-    public static final RegistryObject<Item> WPB_ITEM = ITEMS.register("witherproofblock", () ->
-            new BlockItem(
-                    WPB.get(),
-                    new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)
-            )
-    );
+   public static final RegistryObject<Block> WPBGLASS = BLOCKS.register("witherproofglass", () ->
+        new WitherProofGlass()
+   );
+   public static final RegistryObject<Item> WPB_ITEM = ITEMS.register("witherproofblock", () ->
+        new BlockItem(
+                WPB.get(),
+                new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)
+        )
+   );
+   public static final RegistryObject<Item> WPBGLASS_ITEM = ITEMS.register("witherproofglass", () ->
+        new BlockItem(
+                WPBGLASS.get(),
+                new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)
+        )
+   );
 }

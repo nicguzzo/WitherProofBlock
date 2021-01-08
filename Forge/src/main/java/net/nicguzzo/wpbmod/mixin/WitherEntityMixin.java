@@ -3,6 +3,7 @@ package net.nicguzzo.wpbmod.mixin;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.boss.WitherEntity;
 import net.nicguzzo.wpbmod.WitherProofBlock;
+import net.nicguzzo.wpbmod.WitherProofGlass;
 
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -21,7 +22,7 @@ public abstract class WitherEntityMixin {
 	private static void canDestroyBlock(BlockState block,CallbackInfoReturnable<Boolean>  cir) {
 		//System.out.println("block!: "+block.getBlock().toString());
 		
-		if(block.getBlock() instanceof WitherProofBlock)
+		if( (block.getBlock() instanceof WitherProofBlock) || (block.getBlock() instanceof WitherProofGlass))
 			//LOGGER.info("canDestroyBlock??? "+block.getBlock().toString());
 			cir.setReturnValue(false);
 	}

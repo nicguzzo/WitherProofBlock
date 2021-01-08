@@ -16,14 +16,8 @@ public class WitherProofBlock extends Block {
                            .create(Material.ROCK)
                            .hardnessAndResistance(hardness, resistance)
                            .sound(SoundType.STONE)
-                           .harvestLevel(1)
+                           .harvestLevel(3)
                            .harvestTool(ToolType.PICKAXE));
-            /*FabricBlockSettings.of(Material.STONE)
-            .breakByHand(false)
-            .breakByTool(FabricToolTags.PICKAXES)
-            .sounds(BlockSoundGroup.STONE)
-            .strength(hardness, resistance));*/
-        
     }
     
 }

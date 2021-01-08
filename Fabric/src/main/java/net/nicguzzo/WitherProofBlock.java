@@ -15,7 +15,7 @@ public class WitherProofBlock extends Block {
         super(
             FabricBlockSettings.of(Material.STONE)
             .breakByHand(false)
-            .breakByTool(FabricToolTags.PICKAXES)
+            .breakByTool(FabricToolTags.PICKAXES,3)
             .sounds(BlockSoundGroup.STONE)
             .strength(hardness, resistance));
         

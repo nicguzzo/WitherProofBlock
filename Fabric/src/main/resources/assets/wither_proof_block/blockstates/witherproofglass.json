@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "": { "model": "wither_proof_block:block/witherproofglass" }
+    }
+}

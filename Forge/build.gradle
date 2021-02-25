@@ -16,9 +16,13 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 apply plugin: 'org.spongepowered.mixin'
 
-version = '1.0.2'
+//version = '1.0.2'
 group = 'net.nicguzzzo.wpbmod' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'Wither-Proof Block_forge'
+//archivesBaseName = 'Wither-Proof Block_forge'
+
+archivesBaseName = project.archives_base_name
+version = project.mod_version
+
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 
@@ -107,8 +111,8 @@ dependencies {
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
     //minecraft 'net.minecraftforge:forge:1.16.3-34.1.23'
 
-    minecraft 'net.minecraftforge:forge:1.16.4-35.1.4'
-
+    //minecraft 'net.minecraftforge:forge:1.16.4-35.1.4'
+    minecraft 'net.minecraftforge:forge:1.16.5-36.0.43'
     // You may put jars on which you depend on in ./libs or you may define them like so..
     // compile "some.group:artifact:version:classifier"
     // compile "some.group:artifact:version"

@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "wpbmod:witherproofblock"
+    },
+    "result": "wpbmod:witherproofglass",
+    "experience": 0.1,
+    "cookingtime": 800
+}

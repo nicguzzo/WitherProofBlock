@@ -2,12 +2,16 @@ package net.nicguzzo.wpbmod;
 
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.data.tags.BlockTagsProvider;
+import net.minecraft.data.tags.TagsProvider;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.extensions.IForgeTagAppender;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.event.entity.EntityEvent;
 import net.minecraftforge.event.entity.living.LivingEvent;
@@ -52,7 +56,9 @@ public class WPBMod
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(new MyForgeEventHandler());
         MinecraftForge.EVENT_BUS.register(this);
-        
+        //BlockTags.WITHER_IMMUNE
+        //TagsProvider.TagAppender
+
     }
 
     private void setup(final FMLCommonSetupEvent event)
